@@ -1,0 +1,1640 @@
+﻿* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #F1F2EB;
+    color: #D8DAD3;
+    color: #A4C2A5;
+    color: #566246;
+    color: #4A4A48;
+
+}
+
+@font-face {
+    font-family: estedad;
+    font-style: normal;
+    font-weight: normal;
+    src: url('fonts/Estedad-Regular.woff2') format('woff2'),
+        url('fonts/Estedad-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: estedad;
+    font-style: normal;
+    font-weight: bold;
+    src: url('fonts/Estedad-Bold.woff2') format('woff2'),
+        url('fonts/Estedad-Bold.woff2') format('truetype');
+}
+
+@font-face {
+    font-family: mikhak;
+    font-style: normal;
+    font-weight: normal;
+    src: url('fonts/Mikhak-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: mikhak;
+    font-style: normal;
+    font-weight: bold;
+    src: url('fonts/Mikhak-Bold.ttf') format('truetype');
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.web-menu-section {
+    width: 100%;
+    height: 12vh;
+    background-color: #566246;
+}
+
+.web-header-fixed {
+    position: fixed;
+    width: 100%;
+    height: 12vh;
+    background-color: #566246;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .05);
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+    animation-duration: .6s;
+    animation-fill-mode: backwards;
+    z-index: 100;
+}
+
+.web-menu-section .left h4 {
+    font-size: 16px;
+    font-family: mikhak;
+    display: inline;
+    font-weight: bold;
+    margin-left: 25px;
+    height: 85px;
+    line-height: 85px;
+    color: #F1F2EB;
+    transition: color .4s;
+}
+
+.web-menu-section .left .margin i {
+    display: block;
+    transform: translate(0px, -53px);
+    color: #A4C2A5;
+}
+
+.web-menu-section .left h4:hover {
+    color: #A4C2A5;
+    cursor: pointer;
+}
+
+.material-icons {
+    transform: translate(-5px, 10px);
+    color: #A4C2A5;
+}
+
+.web-menu-section .middle {
+    text-align: right;
+
+}
+
+.web-menu-section .middle li {
+    list-style: none;
+    display: inline;
+}
+
+.web-menu-section .middle .first {
+    margin-right: 120px;
+}
+
+.web-menu-section .middle li a {
+    color: #F1F2EB;
+    font-family: estedad;
+    font-size: 14px;
+    height: 85px;
+    line-height: 85px;
+    transition: color .4s;
+    text-decoration: none;
+    border-left: 2px solid #A4C2A5;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.web-menu-section .middle li:nth-child(7) a {
+    border: 0;
+}
+
+.web-menu-section .middle a:hover {
+    color: #A4C2A5;
+}
+
+
+
+.web-menu-section .right {
+    margin-top: 20px;
+}
+
+.web-menu-section .right h4 {
+    font-family: mikhak;
+    font-weight: bold;
+    font-size: 20px;
+    color: #F1F2EB;
+    MARGIN-bottom: 0;
+}
+
+.web-menu-section .right span {
+    font-family: estedad;
+    font-weight: bold;
+    font-size: 10px;
+    color: #F1F2EB;
+}
+
+.web-menu-section .hamburger {
+    display: none;
+    z-index: 100;
+}
+
+.web-menu-section .hamburger-nav {
+    width: 100wh;
+    height: 100vh;
+    margin-top: -185px;
+    position: relative;
+    display: none;
+}
+
+.web-menu-section .hamburger-nav .rightt {
+    position: relative;
+    background-color: #4A4A48;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    text-align: center;
+    right: -60%;
+    position: fixed;
+    transition: all .3s;
+}
+
+.go-left {
+    right: 58.3% !important;
+}
+
+.web-menu-section .hamburger-nav .rightt a {
+    font-size: 30px;
+    font-family: mikhak;
+    font-weight: bold;
+    color: #F1F2EB;
+    text-decoration: none;
+    transition: all .4s;
+}
+
+.go-right {
+    right: 0% !important;
+}
+
+.web-menu-section .hamburger-nav .rightt a:hover {
+    color: #2d8285;
+}
+
+.web-menu-section .hamburger-nav .rightt li {
+    margin-top: 20px;
+}
+
+.web-menu-section .hamburger-nav .rightt li:nth-child(1) {
+    margin-top: 160px;
+}
+
+.web-menu-section .hamburger-nav .leftt {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #2d8285;
+    z-index: 1;
+    text-align: center;
+    right: 100%;
+    transition: all .3s;
+}
+
+.web-menu-section .hamburger-nav .leftt h4 {
+    font-size: 25px;
+    font-family: estedad;
+    font-weight: bold;
+    color: #F1F2EB;
+    margin-top: 50px;
+    cursor: pointer;
+    transition: all .4s;
+}
+
+.web-menu-section .hamburger-nav .leftt h4:hover {
+    color: #4A4A48;
+}
+
+.web-menu-section .hamburger-nav .leftt h4:nth-child(1) {
+    margin-top: 280px;
+}
+
+.web-menu-section .hamburger-nav .leftt h4:nth-child(2) {
+    display: inline-flex;
+}
+
+
+.web-menu-section .hamburger-nav .leftt .material-icons {
+    transform: translate(5px, 10px);
+    color: #F1F2EB;
+}
+
+.web-menu-section .hamburger-nav .leftt .gg-shopping-cart {
+    margin: 8px 0 0 5px;
+    color: #F1F2EB;
+    transform: scale(1.1);
+}
+
+.web-ticket-section .picture {
+    position: relative;
+    width: 100%;
+    height: 350px;
+}
+
+.web-ticket-section .picture img {
+    display: table;
+    margin: auto;
+    width: 80%;
+}
+
+.web-ticket-section .picture .overlay {
+    position: absolute;
+    top: o;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 350px;
+    background-color: #a8ebaaa8;
+}
+
+.web-ticket-section .first-line {
+    width: 680px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #F1F2EB;
+    padding: 5px 50px;
+    border-radius: 5px;
+}
+
+.web-ticket-section .first-line li {
+    list-style: none;
+    display: inline;
+    margin: 0 50px 0 0;
+}
+
+.web-ticket-section .first-line li:nth-child(6) {
+    margin: 0;
+}
+
+.web-ticket-section .first-line a {
+    text-decoration: none;
+    font-family: mikhak;
+    font-size: 18px;
+    font-weight: bold;
+    color: #566246;
+    margin-top: 3px;
+    display: inline-grid;
+    transition: all .2s;
+    padding: 7px 0;
+}
+
+.web-ticket-section .first-line li:nth-child(6) a {
+    border-bottom: 4px solid #566246;
+}
+
+.web-ticket-section .first-line img {
+    width: 40px;
+    height: 40px;
+    margin: auto;
+}
+
+.web-ticket-section .first-line a:hover {
+    color: #A4C2A5;
+    transform: scale(1.1);
+}
+
+.web-ticket-section .second-line-villa {
+    position: relative;
+    top: 65%;
+    width: 100%;
+}
+
+.web-ticket-section .background {
+    background-color: #566246;
+    width: 100%;
+    height: 28vh;
+}
+
+.web-ticket-section .second-line-villa .input {
+    margin-left: -30px;
+    color: #F1F2EB;
+}
+
+.web-ticket-section .second-line-villa button,
+.web-ticket-section .second-line-hotel button,
+.web-ticket-section .second-line-tour button,
+.web-ticket-section .second-line-bus button,
+.web-ticket-section .second-line-train button,
+.web-ticket-section .second-line-plane button {
+    margin-left: 185px;
+}
+
+.web-ticket-section .second-line-villa .second button,
+.web-ticket-section .second-line-tour .second button,
+.web-ticket-section .second-line-plane .second button,
+.web-ticket-section .second-line-train .second button,
+.web-ticket-section .second-line-hotel .second button,
+.web-ticket-section .second-line-bus .second button {
+    display: none;
+}
+
+.web-ticket-section .second-line-villa .input input,
+.web-ticket-section .second-line-hotel .input input,
+.web-ticket-section .second-line-tour .input input,
+.web-ticket-section .second-line-bus .input input,
+.web-ticket-section .second-line-train .input input,
+.web-ticket-section .second-line-plane .input input {
+    border: 2px solid #a8ebaaa8;
+    border-radius: 4px;
+    background-color: transparent;
+    width: 90%;
+    height: 40px;
+    color: #F1F2EB;
+    font-family: estedad;
+    font-size: 12px;
+    text-align: right;
+    margin-left: 185px;
+}
+
+.web-ticket-section .second-line-villa .input input::placeholder {
+    color: #F1F2EB;
+    font-family: estedad;
+    font-size: 12px;
+}
+
+.web-ticket-section .second-line-villa .input button {
+    border: 2px solid #F1F2EB;
+    border-radius: 4px;
+    background-color: transparent;
+    width: 80%;
+    height: 40px;
+    color: #F1F2EB;
+    font-family: estedad;
+    font-size: 15px;
+    text-align: center;
+    transition: all .4s;
+    font-weight: bold;
+}
+
+.web-ticket-section .second-line-villa .input button:hover {
+    background-color: #F1F2EB;
+    color: #566246;
+}
+
+.web-ticket-section .second-line-hotel {
+    position: relative;
+    top: 65%;
+    width: 100%;
+}
+
+.web-ticket-section .second-line-hotel {
+    display: none;
+}
+
+.web-ticket-section .second-line-hotel .input {
+    margin-left: -30px;
+    color: #F1F2EB;
+}
+
+.web-ticket-section .second-line-hotel .input input::placeholder {
+    color: #F1F2EB;
+    font-family: estedad;
+    font-size: 12px;
+}
+
+.web-ticket-section .second-line-hotel .input button {
+    border: 2px solid #F1F2EB;
+    border-radius: 4px;
+    background-color: transparent;
+    width: 80%;
+    height: 40px;
+    color: #F1F2EB;
+    font-family: estedad;
+    font-size: 15px;
+    text-align: center;
+    transition: all .4s;
+    font-weight: bold;
+}
+
+.web-ticket-section .second-line-hotel .input button:hover {
+    background-color: #F1F2EB;
+    color: #566246;
+}
+
+.web-ticket-section .second-line-tour {
+    position: relative;
+    top: 65%;
+    width: 100%;
+}
+
+.web-ticket-section .second-line-tour {
+    display: none;
+}
+
+.web-ticket-section .second-line-tour .input {
+    margin-left: -45px;
+    color: #F1F2EB;
+}
+
+.web-ticket-section .second-line-tour .input input::placeholder {
+    color: #F1F2EB;
+    font-family: estedad;
+    font-size: 12px;
+}
+
+.web-ticket-section .second-line-tour .input button {
+    border: 2px solid #F1F2EB;
+    border-radius: 4px;
+    background-color: transparent;
+    width: 80%;
+    height: 40px;
+    color: #F1F2EB;
+    font-family: estedad;
+    font-size: 15px;
+    text-align: center;
+    transition: all .4s;
+    font-weight: bold;
+}
+
+.web-ticket-section .second-line-tour .input button:hover {
+    background-color: #F1F2EB;
+    color: #566246;
+}
+
+.web-ticket-section .second-line-bus {
+    position: relative;
+    top: 65%;
+    width: 100%;
+}
+
+.web-ticket-section .second-line-bus {
+    display: none;
+}
+
+.web-ticket-section .second-line-bus .input {
+    margin-left: -30px;
+    color: #F1F2EB;
+}
+
+.web-ticket-section .second-line-bus .input input::placeholder {
+    color: #F1F2EB;
+    font-family: estedad;
+    font-size: 12px;
+}
+
+.web-ticket-section .second-line-bus .input button {
+    border: 2px solid #F1F2EB;
+    border-radius: 4px;
+    background-color: transparent;
+    width: 80%;
+    height: 40px;
+    color: #F1F2EB;
+    font-family: estedad;
+    font-size: 15px;
+    text-align: center;
+    transition: all .4s;
+    font-weight: bold;
+}
+
+.web-ticket-section .second-line-bus .input button:hover {
+    background-color: #F1F2EB;
+    color: #566246;
+}
+
+.web-ticket-section .second-line-train {
+    position: relative;
+    top: 65%;
+    width: 100%;
+}
+
+.web-ticket-section .second-line-train {
+    display: none;
+}
+
+.web-ticket-section .second-line-train .input {
+    margin-left: -45px;
+    color: #F1F2EB;
+}
+
+.web-ticket-section .second-line-train .input input::placeholder {
+    color: #F1F2EB;
+    font-family: estedad;
+    font-size: 12px;
+}
+
+.web-ticket-section .second-line-train .input button {
+    border: 2px solid #F1F2EB;
+    border-radius: 4px;
+    background-color: transparent;
+    width: 80%;
+    height: 40px;
+    color: #F1F2EB;
+    font-family: estedad;
+    font-size: 15px;
+    text-align: center;
+    transition: all .4s;
+    font-weight: bold;
+}
+
+.web-ticket-section .second-line-train .input button:hover {
+    background-color: #F1F2EB;
+    color: #566246;
+}
+
+.web-ticket-section .second-line-plane {
+    position: relative;
+    top: 65%;
+    width: 100%;
+}
+
+.web-ticket-section .second-line-plane {
+    display: none;
+}
+
+.web-ticket-section .second-line-plane .input {
+    margin-left: -45px;
+    color: #F1F2EB;
+}
+
+.web-ticket-section .second-line-plane .input input::placeholder {
+    color: #F1F2EB;
+    font-family: estedad;
+    font-size: 12px;
+}
+
+.web-ticket-section .second-line-plane .input button {
+    border: 2px solid #F1F2EB;
+    border-radius: 4px;
+    background-color: transparent;
+    width: 80%;
+    height: 40px;
+    color: #F1F2EB;
+    font-family: estedad;
+    font-size: 15px;
+    text-align: center;
+    transition: all .4s;
+    font-weight: bold;
+}
+
+.web-ticket-section .second-line-plane .input button:hover {
+    background-color: #F1F2EB;
+    color: #566246;
+}
+
+.web-benefit-section {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding: 40px;
+}
+
+.web-benefit-section .card {
+    border: 0;
+}
+
+.web-benefit-section h4 {
+    color: #566246;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: mikhak;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.web-benefit-section img {
+    width: 40%;
+    height: 16vh;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.web-benefit-section .difrent {
+    width: 35%;
+    height: 12vh;
+    margin-bottom: 30px;
+}
+
+.web-benefit-section h5 {
+    font-size: 14px;
+    font-family: estedad;
+    color: #4A4A48;
+    text-align: center;
+    font-weight: bold;
+}
+
+.web-threeclick-section {
+    background-color: #c6e7c6;
+    padding-top: 0.5px;
+    padding-bottom: 40px;
+    margin-bottom: 50px;
+}
+
+.web-threeclick-section .first-line {
+    text-align: right;
+    width: 100%;
+    margin-bottom: 40px;
+    margin-top: 70px;
+}
+
+.web-threeclick-section .first-line .input {
+    display: inline;
+    margin: 0 300px 0 0;
+}
+
+.web-threeclick-section input {
+    display: inline;
+}
+
+.web-threeclick-section h4 {
+    display: inline;
+    font-family: mikhak;
+    font-weight: bold;
+    font-size: 24px;
+    color: #566246;
+}
+
+.web-threeclick-section span {
+    color: #d83550;
+}
+
+.web-threeclick-section h5 {
+    display: inline;
+    font-family: estedad;
+    font-size: 18px;
+    color: #4A4A48;
+    margin-left: 30px;
+}
+
+.web-threeclick-section h6 {
+    color: #d83550;
+    font-family: mikhak;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 18px;
+    background-color: #A4C2A5;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.web-threeclick-section .all {
+    padding: 15px 0 10px 0;
+    margin-bottom: 20px;
+    position: relative;
+    bottom: 30px;
+}
+
+.web-threeclick-section .flight {
+    text-align: center;
+    border-radius: 10px;
+    background-color: white;
+    margin-left: 70px;
+    padding: 30px;
+}
+
+.web-threeclick-section .destination {
+    text-align: right;
+    display: flex;
+}
+
+.web-threeclick-section .destination2 {
+    display: none;
+}
+
+.web-threeclick-section .ticket {
+    margin: auto;
+    text-align: right;
+    border-radius: 5px;
+    transition: all .5s;
+    padding: 8px;
+}
+
+.web-threeclick-section .ticket:hover {
+    background-color: #c6e7c6;
+    cursor: pointer;
+}
+
+.web-threeclick-section .ticket h3,
+.web-threeclick-section .ticket h5,
+.web-threeclick-section .ticket h4 {
+    font-size: 18px;
+    font-family: estedad;
+    color: #4A4A48;
+    display: inline-block;
+    margin: 0;
+}
+
+.web-threeclick-section .ticket h4 {
+    margin-left: 15px;
+}
+
+.web-tour-section {
+    margin: 60px 0 50px 0;
+}
+
+.web-tour-section h2 {
+    color: #566246;
+    font-family: mikhak;
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.web-tour-section .card {
+    border: 0;
+}
+
+.web-tour-section img {
+    width: 100%;
+    height: 150px;
+    margin: 17px 0;
+    border-radius: 8px;
+    transition: all .4s;
+}
+
+.web-tour-section img:nth-child(1):hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.web-tour-section img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.web-hotel-section {
+    margin-bottom: 60px;
+}
+
+.web-hotel-section .first-line,
+.web-hotel-section .second-line,
+.web-hotel-section .third-line {
+    display: table;
+    width: 100%;
+}
+
+.web-hotel-section .first-line .section:nth-child(1),
+.web-hotel-section .first-line .section:nth-child(4),
+.web-hotel-section .first-line .section:nth-child(7) {
+    margin-left: 105px;
+}
+
+.web-hotel-section .section {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-right: 50px;
+    direction: rtl;
+    background-color: #c6e7c6;
+    cursor: pointer;
+    transition: all .4s;
+}
+
+.web-hotel-section .section:hover {
+    background-color: transparent;
+    border: .5px solid #4a4a4837;
+}
+
+.web-hotel-section .section:nth-child(3),
+.web-hotel-section .section:nth-child(6),
+.web-hotel-section .section:nth-child(9) {
+    margin-right: 0px;
+}
+
+.web-hotel-section img {
+    width: 45px;
+    height: 45px;
+    margin: 3px 10px 0 0;
+}
+
+.web-hotel-section h4 {
+    color: #4A4A48;
+    font-family: estedad;
+    font-size: 18px;
+    margin-top: 16px;
+}
+
+.web-question-section {
+    margin-bottom: 50px;
+    padding: 30px 0;
+    background-color: #c6e7c6;
+}
+
+.web-question-section .title {
+    margin: auto;
+}
+
+.web-question-section h4 {
+    font-family: mikhak;
+    font-size: 24px;
+    font-weight: bold;
+    color: #566246;
+    margin-bottom: 30px;
+}
+
+.web-question-section .question {
+    margin-bottom: 30px;
+}
+
+.web-question-section .buttn1,
+.web-question-section .buttn2,
+.web-question-section .buttn3,
+.web-question-section .buttn4 {
+    font-family: mikhak;
+    font-weight: bold;
+    font-size: 20px;
+    border: .01rem solid #4A4A48;
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px 10px 10px 0;
+    text-align: right;
+    color: #4A4A48;
+    transition: all .4s;
+}
+
+.web-question-section .buttn1:hover,
+.web-question-section .buttn2:hover,
+.web-question-section .buttn3:hover,
+.web-question-section .buttn4:hover {
+    -webkit-box-shadow: 0px 5px 15px 4px rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 5px 15px 4px rgba(0, 0, 0, 0.6);
+}
+
+.web-question-section .buttn1:focus,
+.web-question-section .buttn2:focus,
+.web-question-section .buttn3:focus,
+.web-question-section .buttn4:focus {
+    outline: none;
+
+}
+
+.web-question-section .collaps1,
+.web-question-section .collaps2,
+.web-question-section .collaps3,
+.web-question-section .collaps4 {
+    background-color: #F1F2EB;
+    border-radius: 0 0 5px 5px;
+    display: none;
+}
+
+.web-question-section p {
+    font-family: estedad;
+    font-size: 14px;
+    width: 100%;
+    padding: 15px;
+    text-align: right;
+    color: #4A4A48;
+}
+
+.web-question-section span {
+    font-family: estedad;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    color: #4A4A48;
+    float: left;
+    margin-left: 15px;
+    transition: all .4s;
+}
+
+.rotate {
+    transform: rotate(-90deg);
+}
+
+.web-magazine-section h4 {
+    font-family: mikhak;
+    color: #566246;
+    font-weight: bold;
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.web-magazine-section .section {
+    margin-bottom: 20px;
+    display: flex;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.web-magazine-section .first-line .section:nth-child(1),
+.web-magazine-section .first-line .section:nth-child(3),
+.web-magazine-section .first-line .section:nth-child(5) {
+    background-color: #c6e7c6;
+}
+
+.web-magazine-section img {
+    width: 50%;
+    height: 100px;
+    border-radius: 5px;
+}
+
+.web-magazine-section h6 {
+    font-family: estedad;
+    font-size: 16px;
+    color: #4A4A48;
+    text-align: right;
+    margin-right: 10px;
+    width: 200%;
+}
+
+.web-magazine-section button {
+    width: 70%;
+    height: 35px;
+    background-color: transparent;
+    font-size: 14px;
+    font-family: estedad;
+    border: 2px solid #A4C2A5;
+    transition: all .4s;
+    border-radius: 5px;
+    margin-top: 70px;
+}
+
+.web-magazine-section button:hover {
+    background-color: #A4C2A5;
+}
+
+.web-aplication-section {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.web-aplication-section img {
+    width: 100%;
+    height: 300px;
+}
+
+.web-aplication-section h3 {
+    font-family: mikhak;
+    font-weight: bold;
+    font-size: 22px;
+    color: #566246;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.web-aplication-section h6 {
+    font-family: estedad;
+    font-weight: bold;
+    font-size: 12px;
+    color: #4A4A48;
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.web-aplication-section p {
+    font-family: estedad;
+    font-size: 12px;
+    color: #4A4A48;
+    text-align: right;
+}
+
+.web-aplication-section button {
+    font-family: mikhak;
+    padding: 5px;
+    border-radius: 5px;
+    width: 25%;
+    height: 40px;
+    background-color: #566246;
+    color: #D8DAD3;
+}
+
+.web-aplication-section input {
+    font-family: mikhak;
+    padding: 5px;
+    border-radius: 5px;
+    width: 45%;
+    height: 40px;
+    border: 2px solid #566246;
+    margin-bottom: 15px;
+    text-align: right;
+}
+
+.web-aplication-section h4 {
+    font-family: mikhak;
+    font-weight: bold;
+    font-size: 18px;
+    color: #566246;
+    text-align: right;
+    margin-bottom: 15px;
+}
+
+.web-aplication-section .fifth-line {
+    display: flex;
+    text-align: right;
+    float: right;
+}
+
+.web-aplication-section .column1 {
+    margin-right: 40px;
+}
+
+.web-aplication-section ul {
+    list-style: none;
+}
+
+.web-aplication-section li {
+    font-family: estedad;
+    font-size: 12px;
+    color: #4A4A48;
+    text-align: right;
+    margin-bottom: 5px;
+}
+
+.web-footer-section {
+    margin-top: 60px;
+    background: rgb(198, 231, 198);
+    background: linear-gradient(0deg, rgba(198, 231, 198, 1) 57%, rgba(255, 255, 255, 1) 100%);
+    padding-top: 70px;
+}
+
+.web-footer-section .column4,
+.web-footer-section .column2,
+.web-footer-section .column3 {
+    text-align: right;
+}
+
+.web-footer-section h4 {
+    text-align: right;
+    font-family: mikhak;
+    font-weight: bold;
+    font-size: 22px;
+    color: #566246;
+}
+
+.web-footer-section li {
+    list-style: none;
+}
+
+.web-footer-section a {
+    text-align: right;
+    font-family: estedad;
+    font-size: 16px;
+    color: #4A4A48;
+    text-decoration: none;
+    transition: all .4s;
+}
+
+.web-footer-section a:hover {
+    letter-spacing: 1px;
+}
+
+.web-footer-section .icon {
+    display: flex;
+}
+
+.web-footer-section i:nth-child(1) {
+    width: 100%;
+    height: 80px;
+}
+
+.web-footer-section .fa-instagram,
+.web-footer-section .fa-telegram,
+.web-footer-section .fa-twitter {
+    transition: all .4s;
+    width: 12%;
+    font-size: 24px;
+}
+
+.web-footer-section .fa-instagram:hover {
+    color: #E1306C;
+    cursor: pointer;
+}
+
+.web-footer-section .fa-telegram:hover {
+    color: #2d8285;
+    cursor: pointer;
+}
+
+.web-footer-section .fa-twitter:hover {
+    color: rgb(49, 223, 236);
+    cursor: pointer;
+}
+
+@media screen and (max-width:1200px) {
+
+    .web-menu-section .left h4 {
+        font-size: 14px;
+        margin-left: 13px;
+    }
+
+    .web-menu-section .middle .first{
+        margin-right: 0;
+    }
+
+    .web-menu-section .hamburger-nav{
+        height: 0;
+    }
+
+    .web-menu-section .left .margin i {
+        transform: translate(-10px, -53px);
+    }
+
+    .web-ticket-section .second-line-villa button,
+    .web-ticket-section .second-line-hotel button,
+    .web-ticket-section .second-line-tour button,
+    .web-ticket-section .second-line-bus button,
+    .web-ticket-section .second-line-train button,
+    .web-ticket-section .second-line-plane button {
+        margin-left: 175px;
+    }
+
+    .web-ticket-section .second-line-villa .input input,
+    .web-ticket-section .second-line-hotel .input input,
+    .web-ticket-section .second-line-tour .input input,
+    .web-ticket-section .second-line-bus .input input,
+    .web-ticket-section .second-line-train .input input,
+    .web-ticket-section .second-line-plane .input input {
+        margin-left: 175px;
+    }
+
+    .web-ticket-section .second-line-tour .input input,
+    .web-ticket-section .second-line-train .input input,
+    .web-ticket-section .second-line-plane .input input {
+        width: 75%;
+    }
+
+    .web-threeclick-section .first-line .input {
+        margin-right: 200px;
+    }
+
+    .web-threeclick-section .ticket h3,
+    .web-threeclick-section .ticket h5,
+    .web-threeclick-section .ticket h4 {
+        font-size: 16px;
+    }
+
+    .web-question-section .buttn1,
+    .web-question-section .buttn2,
+    .web-question-section .buttn3,
+    .web-question-section .buttn4 {
+        font-size: 18px;
+    }
+
+    .web-magazine-section button {
+        font-size: 12px;
+    }
+
+    .web-footer-section h4 {
+        font-size: 20px;
+    }
+
+    .web-footer-section a {
+        font-size: 15px;
+    }
+
+    .web-footer-section .fa-instagram,
+    .web-footer-section .fa-telegram,
+    .web-footer-section .fa-twitter {
+        width: 15%;
+    }
+
+}
+
+@media screen and (max-width:992px) {
+
+    .container {
+        max-width: 768px;
+    }
+
+    .web-menu-section .middle {
+        opacity: 0;
+    }
+
+    .web-menu-section .left {
+        display: none;
+    }
+
+    .web-menu-section .right {
+        margin-left: 25px;
+        text-align: right;
+        margin-right: 25px;
+    }
+
+    .web-menu-section .hamburger {
+        display: block;
+        width: 40px;
+        height: 60px;
+        margin-top: 23px;
+    }
+
+    .web-menu-section .hamburger-nav{
+        display: block;
+    }
+
+    .web-menu-section .hamburger-line {
+        width: 100%;
+        height: 3px;
+        background-color: #c6e7c6;
+        margin-bottom: 10px;
+    }
+
+    .web-ticket-section .second-line-villa .input input,
+    .web-ticket-section .second-line-hotel .input input,
+    .web-ticket-section .second-line-bus .input input {
+        margin-left: 160px;
+    }
+
+    .web-threeclick-section .flight {
+        margin-left: 50px;
+    }
+
+    .web-threeclick-section h6 {
+        font-size: 18px;
+    }
+
+    .web-threeclick-section .ticket h3,
+    .web-threeclick-section .ticket h5,
+    .web-threeclick-section .ticket h4 {
+        font-size: 13px;
+    }
+
+    .web-hotel-section .section {
+        margin-right: 10px !important;
+    }
+
+    .web-hotel-section h4 {
+        font-size: 14px;
+    }
+
+    .web-magazine-section .first-line .section:nth-child(3) {
+        background-color: transparent;
+    }
+
+    .web-magazine-section .first-line .section:nth-child(4) {
+        background-color: #c6e7c6;
+    }
+
+    .web-aplication-section img {
+        height: 250px;
+    }
+
+    .web-footer-section .fa-instagram,
+    .web-footer-section .fa-telegram,
+    .web-footer-section .fa-twitter {
+        width: 20%;
+    }
+
+    .web-footer-section h4 {
+        font-size: 17px;
+    }
+
+    .web-footer-section a {
+        font-size: 12px;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+
+    .web-menu-section .hamburger-nav .rightt,
+    .web-menu-section .hamburger-nav .leftt {
+        top: 0;
+        height: 110vh;
+    }
+
+    .web-menu-section .middle {
+        height: 0;
+    }
+
+    .web-menu-section .right {
+        width: 88%;
+        margin-right: 0;
+    }
+
+    .web-menu-section .hamburger-nav .leftt h4 {
+        font-size: 22px;
+    }
+
+    .web-menu-section .hamburger-nav .rightt a {
+        font-size: 26px;
+    }
+
+    .web-ticket-section .picture {
+        height: 255px;
+    }
+
+    .web-ticket-section .picture .overlay {
+        height: 255px;
+    }
+
+    .web-ticket-section .first-line {
+        width: 95%;
+    }
+
+    .web-ticket-section .first-line ul {
+        margin: auto;
+        display: table;
+    }
+
+    .web-ticket-section .first-line img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .web-ticket-section .first-line a {
+        font-size: 15px
+    }
+
+    .web-ticket-section .first-line li {
+        margin: 0 20px 0 0;
+    }
+
+    .web-ticket-section .first-line li:nth-child(7) {
+        margin: 0;
+    }
+
+    .web-ticket-section .background {
+        height: 40vh;
+    }
+
+    .web-ticket-section .second-line-villa,
+    .web-ticket-section .second-line-tour,
+    .web-ticket-section .second-line-plane,
+    .web-ticket-section .second-line-train,
+    .web-ticket-section .second-line-hotel,
+    .web-ticket-section .second-line-bus {
+        top: 25%;
+    }
+
+    .web-ticket-section .second-line-villa .input:nth-child(1) button,
+    .web-ticket-section .second-line-tour .input:nth-child(1) button,
+    .web-ticket-section .second-line-plane .input:nth-child(1) button,
+    .web-ticket-section .second-line-train .input:nth-child(1) button,
+    .web-ticket-section .second-line-hotel .input:nth-child(1) button,
+    .web-ticket-section .second-line-bus .input:nth-child(1) button {
+        display: none;
+    }
+
+    .web-ticket-section .second-line-villa .second button,
+    .web-ticket-section .second-line-tour .second button,
+    .web-ticket-section .second-line-plane .second button,
+    .web-ticket-section .second-line-train .second button,
+    .web-ticket-section .second-line-hotel .second button,
+    .web-ticket-section .second-line-bus .second button {
+        margin-top: 15px;
+        display: block;
+    }
+
+    .web-ticket-section .second-line-tour .input input,
+    .web-ticket-section .second-line-plane .input input,
+    .web-ticket-section .second-line-train .input input,
+    .web-ticket-section .second-line-villa .input input,
+    .web-ticket-section .second-line-hotel .input input,
+    .web-ticket-section .second-line-bus .input input {
+        margin-top: 15px;
+    }
+
+    .web-ticket-section .second-line-villa .input input,
+    .web-ticket-section .second-line-hotel .input input,
+    .web-ticket-section .second-line-bus .input input {
+        margin-left: 80px;
+        width: 80%;
+    }
+
+    .web-ticket-section .second-line-tour .input input,
+    .web-ticket-section .second-line-plane .input input,
+    .web-ticket-section .second-line-train .input input {
+        margin-left: 110px;
+        width: 85%;
+    }
+
+    .web-ticket-section .second-line-villa button,
+    .web-ticket-section .second-line-hotel button,
+    .web-ticket-section .second-line-bus button {
+        margin-left: 80px;
+        width: 86% !important;
+    }
+
+    .web-ticket-section .second-line-tour button,
+    .web-ticket-section .second-line-train button,
+    .web-ticket-section .second-line-plane button {
+        margin-left: 110px;
+        width: 79% !important;
+    }
+
+    .web-ticket-section .second-line-tour .input:nth-child(5) input,
+    .web-ticket-section .second-line-tour .input:nth-child(6) input,
+    .web-ticket-section .second-line-plane .input:nth-child(5) input,
+    .web-ticket-section .second-line-plane .input:nth-child(6) input,
+    .web-ticket-section .second-line-train .input:nth-child(5) input,
+    .web-ticket-section .second-line-train .input:nth-child(6) input {
+        width: 73%;
+    }
+
+    .input input .web-benefit-section h5 {
+        font-size: 9px
+    }
+
+    .web-threeclick-section .ticket {
+        padding: 5px 27px;
+        text-align: right;
+    }
+
+    .web-threeclick-section .flight {
+        margin-left: 60px;
+        margin-top: 30px;
+    }
+
+    .web-threeclick-section .ticket h3,
+    .web-threeclick-section .ticket h5,
+    .web-threeclick-section .ticket h4 {
+        font-size: 16px;
+    }
+
+    .web-threeclick-section .first-line .input {
+        margin: 0 100px 0 0;
+    }
+
+    .web-hotel-section .first-line .section:nth-child(1),
+    .web-hotel-section .first-line .section:nth-child(4),
+    .web-hotel-section .first-line .section:nth-child(7) {
+        margin-left: 0;
+    }
+
+    .web-hotel-section .first-line .section:nth-child(1),
+    .web-hotel-section .first-line .section:nth-child(3),
+    .web-hotel-section .first-line .section:nth-child(5),
+    .web-hotel-section .first-line .section:nth-child(7) {
+        margin-left: 50px;
+    }
+
+    .web-hotel-section .first-line .section:nth-child(9) {
+        margin-left: 55px;
+    }
+
+    .web-question-section .buttn1,
+    .web-question-section .buttn2,
+    .web-question-section .buttn3,
+    .web-question-section .buttn4 {
+        font-size: 15px;
+    }
+
+    .web-question-section p {
+        font-size: 12px;
+    }
+
+    .web-magazine-section .first-line .section:nth-child(1),
+    .web-magazine-section .first-line .section:nth-child(3),
+    .web-magazine-section .first-line .section:nth-child(5) {
+        background-color: transparent;
+    }
+
+    .web-magazine-section .first-line .section:nth-child(2),
+    .web-magazine-section .first-line .section:nth-child(4),
+    .web-magazine-section .first-line .section:nth-child(6) {
+        background-color: #c6e7c6;
+    }
+
+    .web-aplication-section .third-line {
+        text-align: right;
+    }
+
+    .web-footer-section .column1 {
+        text-align: right;
+    }
+
+    .web-footer-section .fa-instagram,
+    .web-footer-section .fa-telegram,
+    .web-footer-section .fa-twitter {
+        width: 100%;
+    }
+
+    .web-footer-section .fa-telegram {
+        margin-left: 240px;
+    }
+
+}
+
+@media screen and (max-width:576px) {
+
+    .web-menu-section .right {
+        width: 82%;
+    }
+
+    .web-menu-section .hamburger-nav .leftt h4 {
+        font-size: 18px;
+    }
+
+    .web-menu-section .hamburger-nav .rightt a {
+        font-size: 24px;
+    }
+
+    .web-menu-section .hamburger-nav .leftt .gg-shopping-cart{
+        margin: 2px 0 0 5px;
+    }
+
+    .web-ticket-section .second-line-villa button,
+    .web-ticket-section .second-line-hotel button,
+    .web-ticket-section .second-line-bus button {
+        width: 85% !important;
+    }
+
+    .web-benefit-section img {
+        width: 80%;
+    }
+
+    .web-benefit-section .difrent {
+        width: 50%;
+    }
+
+    .web-benefit-section h5 {
+        font-size: 11px;
+    }
+
+    .web-threeclick-section .first-line .input {
+        margin: 0 45px 0 0;
+    }
+
+    .web-threeclick-section .flight {
+        margin-left: 42px;
+    }
+
+    .web-tour-section h2 {
+        font-size: 22px;
+    }
+
+    .web-hotel-section .first-line .section:nth-child(1),
+    .web-hotel-section .first-line .section:nth-child(3),
+    .web-hotel-section .first-line .section:nth-child(5),
+    .web-hotel-section .first-line .section:nth-child(7) {
+        margin-left: 40px;
+    }
+
+    .web-hotel-section .first-line .section:nth-child(9) {
+        margin-left: 44px;
+    }
+
+    .web-question-section h4 {
+        font-size: 22px;
+    }
+
+    .web-question-section .buttn1,
+    .web-question-section .buttn2,
+    .web-question-section .buttn3,
+    .web-question-section .buttn4 {
+        font-size: 12px;
+    }
+
+    .web-magazine-section h4 {
+        font-size: 23px;
+    }
+
+    .web-magazine-section h6 {
+        font-size: 14px;
+    }
+
+}
+
+
+@media screen and (max-width:576px) {
+
+    .web-ticket-section .first-line a {
+        font-size: 13px;
+    }
+
+    .web-ticket-section .first-line li {
+        margin: 0 7px 0 0;
+    }
+
+    .web-ticket-section .second-line-villa .input input,
+    .web-ticket-section .second-line-hotel .input input,
+    .web-ticket-section .second-line-bus .input input {
+        margin-left: 70px;
+    }
+
+    .web-ticket-section .second-line-villa button,
+    .web-ticket-section .second-line-hotel button,
+    .web-ticket-section .second-line-bus button {
+        margin-left: 70px;
+    }
+
+    .web-hotel-section h4 {
+        font-size: 11px;
+    }
+
+    .web-hotel-section img {
+        width: 41px;
+    }
+
+}
